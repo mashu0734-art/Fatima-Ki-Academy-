@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { SearchModal } from './components/SearchModal';
 import { CloudflareGuideModal } from './components/CloudflareGuideModal';
+import { AdsterraAd } from './components/AdsterraAd';
 
 // Pages
 import { HomePage } from './components/pages/HomePage';
@@ -128,6 +129,8 @@ export default function App() {
         urduMode={urduMode}
         onToggleUrdu={toggleUrduMode}
       />
+      <AdsterraAd type="popunder" />
+      <AdsterraAd type="socialBar" />
 
       {/* Breadcrumb strip on non-home pages */}
       {currentPage !== 'home' && (

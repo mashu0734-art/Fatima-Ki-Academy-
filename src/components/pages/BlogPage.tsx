@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { BLOG_ARTICLES } from '../../data/blogArticles';
 import { BlogArticle, PageId } from '../../types';
 import { AdPlaceholder } from '../AdPlaceholder';
+import { AdsterraAd } from '../AdsterraAd';
 import {
   FileText,
   Clock,
@@ -275,6 +276,10 @@ export const BlogPage: React.FC<BlogPageProps> = ({
       {showAdPreview && (
         <AdPlaceholder slotId="blog-bottom-banner" format="banner" />
       )}
+
+      <div className="pt-8 flex justify-center">
+        <AdsterraAd type="banner-160x600" />
+      </div>
     </div>
   );
 };

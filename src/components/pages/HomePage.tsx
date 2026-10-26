@@ -5,6 +5,7 @@ import { VOCABULARY_LIST } from '../../data/vocabulary';
 import { BLOG_ARTICLES } from '../../data/blogArticles';
 import { TRANSLATIONS } from '../../data/translations';
 import { AdPlaceholder } from '../AdPlaceholder';
+import { AdsterraAd } from '../AdsterraAd';
 import {
   BookOpen,
   Sparkles,
@@ -115,6 +116,9 @@ export const HomePage: React.FC<HomePageProps> = ({
 
   return (
     <div className="space-y-16 pb-20">
+      <div className="max-w-7xl mx-auto px-4 pt-4">
+        <AdsterraAd type="banner-728x90" />
+      </div>
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-10 pb-16 lg:py-20 bg-gradient-to-b from-white via-[#F5F7FC] to-[#F5F7FC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -250,6 +254,9 @@ export const HomePage: React.FC<HomePageProps> = ({
             );
           })}
         </div>
+        <div className="mt-8">
+          <AdsterraAd type="nativeBanner" />
+        </div>
       </section>
 
       {/* Daily English Word Card */}
@@ -368,6 +375,10 @@ export const HomePage: React.FC<HomePageProps> = ({
           </div>
         </div>
       </section>
+
+      <div className="max-w-7xl mx-auto px-4">
+        <AdsterraAd type="smartlink" />
+      </div>
 
       {/* Featured Lessons */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

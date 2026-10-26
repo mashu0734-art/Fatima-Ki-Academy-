@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageId } from '../types';
 import { TRANSLATIONS } from '../data/translations';
+import { AdsterraAd } from './AdsterraAd';
 import { Cloud, BookOpen, Sparkles, CheckCircle2, ShieldCheck, Heart } from 'lucide-react';
 
 interface FooterProps {
@@ -197,25 +198,18 @@ export const Footer: React.FC<FooterProps> = ({
                   {urduMode ? 'شرائط و ضوابط' : 'Terms & Conditions'}
                 </button>
               </li>
-              <li className="pt-2">
-                <label className="flex items-center gap-2 cursor-pointer text-slate-300 hover:text-white select-none">
-                  <input
-                    type="checkbox"
-                    checked={showAdPreview}
-                    onChange={onToggleAdPreview}
-                    className="rounded border-slate-600 text-[#123B83] focus:ring-[#D4A52C] w-3.5 h-3.5"
-                  />
-                  <span className="text-[11px] text-slate-300">
-                    Preview AdSense Slots ({showAdPreview ? 'ON' : 'OFF'})
-                  </span>
-                </label>
-              </li>
+
             </ul>
           </div>
         </div>
 
+        {/* Adsterra Banner 320x50 */}
+        <div className="pt-8 pb-4 flex justify-center">
+          <AdsterraAd type="banner-320x50" />
+        </div>
+
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© {new Date().getFullYear()} Fatima ki Academy. {t.footer.rightsReserved}</p>
           <div className="flex items-center gap-4 text-xs">
             <button

@@ -3,6 +3,7 @@ import { READING_PASSAGES } from '../../data/readingPassages';
 import { ReadingPassage, PageId } from '../../types';
 import { TRANSLATIONS } from '../../data/translations';
 import { AdPlaceholder } from '../AdPlaceholder';
+import { AdsterraAd } from '../AdsterraAd';
 import {
   FileText,
   Clock,
@@ -263,6 +264,9 @@ export const ReadingPage: React.FC<ReadingPageProps> = ({
               </p>
             </div>
           )}
+          <div className="pt-4 border-t border-slate-100 flex justify-center">
+            <AdsterraAd type="banner-160x300" />
+          </div>
         </aside>
       </div>
 

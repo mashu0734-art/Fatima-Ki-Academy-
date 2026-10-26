@@ -3,6 +3,7 @@ import { QUIZ_QUESTIONS } from '../../data/quizzes';
 import { QuizQuestion, PageId } from '../../types';
 import { TRANSLATIONS } from '../../data/translations';
 import { AdPlaceholder } from '../AdPlaceholder';
+import { AdsterraAd } from '../AdsterraAd';
 import {
   HelpCircle,
   CheckCircle2,
@@ -410,6 +411,11 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({
       {showAdPreview && (
         <AdPlaceholder slotId="quiz-bottom-banner" format="banner" />
       )}
+
+      <div className="space-y-4 pt-6 border-t border-slate-200">
+        <AdsterraAd type="banner-300x250" />
+        <AdsterraAd type="smartlink" />
+      </div>
     </div>
   );
 };

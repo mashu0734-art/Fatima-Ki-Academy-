@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { GRAMMAR_LESSONS } from '../../data/lessons';
 import { GrammarLesson, PageId } from '../../types';
 import { AdPlaceholder } from '../AdPlaceholder';
+import { AdsterraAd } from '../AdsterraAd';
 import { TRANSLATIONS } from '../../data/translations';
 import {
   BookOpen,
@@ -101,6 +102,10 @@ export const GrammarPage: React.FC<GrammarPageProps> = ({
         </div>
       </div>
 
+      <div className="max-w-7xl mx-auto px-4 py-2">
+        <AdsterraAd type="banner-468x60" />
+      </div>
+
       {/* Main Grid: Sidebar Navigator + Lesson Viewer */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left Sidebar: Lesson Directory */}
@@ -177,6 +182,9 @@ export const GrammarPage: React.FC<GrammarPageProps> = ({
                 </button>
               );
             })}
+          </div>
+          <div className="pt-4 border-t border-slate-100">
+            <AdsterraAd type="banner-300x250" />
           </div>
         </aside>
 
