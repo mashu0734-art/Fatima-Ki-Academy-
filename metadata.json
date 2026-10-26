@@ -1,0 +1,6 @@
+{
+  "name": "Fatima ki Academy",
+  "description": "Free English learning and practice platform offering interactive grammar lessons, vocabulary builder, sentence correction, reading comprehension, and quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

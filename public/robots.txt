@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fatima-ki-academy.pages.dev/sitemap.xml

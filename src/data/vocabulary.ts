@@ -1,0 +1,277 @@
+import { VocabularyWord } from '../types';
+
+export const VOCABULARY_LIST: VocabularyWord[] = [
+  {
+    id: 'resilient',
+    word: 'Resilient',
+    phonetic: '/rɪˈzɪl.jənt/',
+    partOfSpeech: 'adjective',
+    meaning: 'Able to recover quickly from difficulties, setbacks, or tough situations.',
+    urduMeaning: 'مضبوط، باہمت، مشکلات کا ڈٹ کر سامنا کرنے والا',
+    category: 'Everyday Basics',
+    synonyms: ['Tough', 'Strong', 'Adaptable', 'Unyielding'],
+    antonyms: ['Fragile', 'Weak', 'Vulnerable'],
+    example: 'Despite facing many obstacles, Fatima remained resilient and completed her education.',
+    urduExample: 'کئی رکاوٹوں کے باوجود، فاطمہ باہمت رہیں اور اپنی تعلیم مکمل کی۔'
+  },
+  {
+    id: 'diligent',
+    word: 'Diligent',
+    phonetic: '/ˈdɪl.ɪ.dʒənt/',
+    partOfSpeech: 'adjective',
+    meaning: 'Showing persistent care, effort, and conscientiousness in one\'s work or duties.',
+    urduMeaning: 'محنتی، پرخلوص، مستعد',
+    category: 'Academic & Exams',
+    synonyms: ['Hardworking', 'Assiduous', 'Meticulous', 'Attentive'],
+    antonyms: ['Lazy', 'Negligent', 'Careless'],
+    example: 'A diligent student reviews grammar rules every single day.',
+    urduExample: 'ایک محنتی طالب علم روزانہ گرامر کے اصولوں کو دہراتا ہے۔'
+  },
+  {
+    id: 'articulate',
+    word: 'Articulate',
+    phonetic: '/ɑːˈtɪk.jʊ.lət/',
+    partOfSpeech: 'adjective / verb',
+    meaning: 'Able to express thoughts, ideas, and feelings clearly and effectively in speech or writing.',
+    urduMeaning: 'صاف گو، فصیح و بلیغ، واضح بات کرنے والا',
+    category: 'Academic & Exams',
+    synonyms: ['Eloquent', 'Expressive', 'Lucid', 'Fluent'],
+    antonyms: ['Inarticulate', 'Unclear', 'Hesitant'],
+    example: 'She gave an articulate speech that impressed everyone at the conference.',
+    urduExample: 'انہوں نے ایک واضح اور پر اثر تقریر کی جس نے سب کو متاثر کیا۔'
+  },
+  {
+    id: 'meticulous',
+    word: 'Meticulous',
+    phonetic: '/məˈtɪk.jʊ.ləs/',
+    partOfSpeech: 'adjective',
+    meaning: 'Showing great attention to detail; very careful and precise.',
+    urduMeaning: 'باریک بین، محتاط، نہایت توجہ سے کام کرنے والا',
+    category: 'Business & Work',
+    synonyms: ['Detailed', 'Precise', 'Thorough', 'Painstaking'],
+    antonyms: ['Careless', 'Sloppy', 'Inaccurate'],
+    example: 'He conducted a meticulous check of the document before submitting it.',
+    urduExample: 'انہوں نے دستاویز جمع کروانے سے پہلے اس کی نہایت باریک بینی سے جانچ کی۔'
+  },
+  {
+    id: 'persevere',
+    word: 'Persevere',
+    phonetic: '/ˌpɜː.sɪˈvɪər/',
+    partOfSpeech: 'verb',
+    meaning: 'To continue making an effort to do something despite difficulties or opposition.',
+    urduMeaning: 'ثابت قدم رہنا، ہمت نہ ہارنا، کوشش جاری رکھنا',
+    category: 'Everyday Basics',
+    synonyms: ['Persist', 'Endure', 'Carry on', 'Stand firm'],
+    antonyms: ['Give up', 'Surrender', 'Quit'],
+    example: 'If you want to speak fluent English, you must persevere through initial mistakes.',
+    urduExample: 'اگر آپ روانی سے انگریزی بولنا چاہتے ہیں، تو آپ کو غلطیوں کے باوجود ہمت نہیں ہارنی چاہیے۔'
+  },
+  {
+    id: 'ubiquitous',
+    word: 'Ubiquitous',
+    phonetic: '/juːˈbɪk.wɪ.təs/',
+    partOfSpeech: 'adjective',
+    meaning: 'Present, appearing, or found everywhere at the same time.',
+    urduMeaning: 'ہر جگہ پایا جانے والا، ہمہ گیر',
+    category: 'Academic & Exams',
+    synonyms: ['Omnipresent', 'Everywhere', 'Pervasive', 'Universal'],
+    antonyms: ['Rare', 'Scarce', 'Uncommon'],
+    example: 'Smartphones and internet access have become ubiquitous in modern society.',
+    urduExample: 'اسمارٹ فونز اور انٹرنیٹ جدید معاشرے میں ہر جگہ عام ہو چکے ہیں۔'
+  },
+  {
+    id: 'empathy',
+    word: 'Empathy',
+    phonetic: '/ˈem.pə.θi/',
+    partOfSpeech: 'noun',
+    meaning: 'The ability to understand and share the feelings of another person.',
+    urduMeaning: 'ہمدردی، دوسرے کے جذبات کو سمجھنے کی صلاحیت',
+    category: 'Everyday Basics',
+    synonyms: ['Compassion', 'Understanding', 'Sensitivity'],
+    antonyms: ['Apathy', 'Indifference', 'Callousness'],
+    example: 'Great teachers show empathy toward students who struggle with new languages.',
+    urduExample: 'بہترین اساتذہ ان طلباء سے ہمدردی ظاہر کرتے ہیں جو نئی زبان سیکھنے میں دشواری محسوس کرتے ہیں۔'
+  },
+  {
+    id: 'pragmatic',
+    word: 'Pragmatic',
+    phonetic: '/præɡˈmæt.ɪk/',
+    partOfSpeech: 'adjective',
+    meaning: 'Dealing with things sensibly and realistically based on practical rather than theoretical considerations.',
+    urduMeaning: 'عملی، حقیقت پسندانہ',
+    category: 'Business & Work',
+    synonyms: ['Practical', 'Realistic', 'Sensible', 'Rational'],
+    antonyms: ['Idealistic', 'Impractical', 'Theoretical'],
+    example: 'Her pragmatic approach to learning vocabulary helped her memorize 20 words a week.',
+    urduExample: 'الفاظ سیکھنے کے ان کے عملی انداز نے انہیں ہفتے میں 20 الفاظ یاد کرنے میں مدد دی۔'
+  },
+  {
+    id: 'elated',
+    word: 'Elated',
+    phonetic: '/ɪˈleɪ.tɪd/',
+    partOfSpeech: 'adjective',
+    meaning: 'Ecstatically happy and filled with joy or pride.',
+    urduMeaning: 'نہایت خوش، باغ باغ، مسرور',
+    category: 'Everyday Basics',
+    synonyms: ['Overjoyed', 'Thrilled', 'Delighted', 'Ecstatic'],
+    antonyms: ['Depressed', 'Sad', 'Gloomy'],
+    example: 'She was elated when she received her English test results.',
+    urduExample: 'وہ اپنے انگریزی امتحان کے نتائج دیکھ کر نہایت مسرور ہوئیں۔'
+  },
+  {
+    id: 'ambiguous',
+    word: 'Ambiguous',
+    phonetic: '/æmˈbɪɡ.ju.əs/',
+    partOfSpeech: 'adjective',
+    meaning: 'Open to more than one interpretation; not having one obvious meaning.',
+    urduMeaning: 'مبہم، جس کے ایک سے زیادہ معنی نکلتے ہوں، غیر واضح',
+    category: 'Academic & Exams',
+    synonyms: ['Vague', 'Equivocal', 'Unclear', 'Obscure'],
+    antonyms: ['Clear', 'Definite', 'Explicit', 'Unambiguous'],
+    example: 'Avoid ambiguous sentences in your essays so your examiner understands your point.',
+    urduExample: 'اپنے مضامین میں مبہم جملوں سے پرہیز کریں تاکہ ممتحن آپ کی بات سمجھ سکے۔'
+  },
+  {
+    id: 'concise',
+    word: 'Concise',
+    phonetic: '/kənˈsaɪs/',
+    partOfSpeech: 'adjective',
+    meaning: 'Giving a lot of information clearly and in a few words; brief but comprehensive.',
+    urduMeaning: 'مختصر مگر جامع',
+    category: 'Academic & Exams',
+    synonyms: ['Brief', 'Succinct', 'Compact', 'Pithy'],
+    antonyms: ['Wordy', 'Verbose', 'Rambling'],
+    example: 'Fatima\'s grammar notes are concise and easy to review before an exam.',
+    urduExample: 'فاطمہ کے گرامر کے نوٹس امتحان سے پہلے دہرانے کے لیے مختصر مگر جامع ہیں۔'
+  },
+  {
+    id: 'collaborate',
+    word: 'Collaborate',
+    phonetic: '/kəˈlæb.ə.reɪt/',
+    partOfSpeech: 'verb',
+    meaning: 'To work jointly with others on an activity or project.',
+    urduMeaning: 'مل کر کام کرنا، تعاون کرنا',
+    category: 'Business & Work',
+    synonyms: ['Cooperate', 'Team up', 'Work together', 'Partner'],
+    antonyms: ['Compete', 'Work alone'],
+    example: 'Students collaborate in study groups to solve difficult comprehension passages.',
+    urduExample: 'طلباء مشکل پیراگراف حل کرنے کے لیے اسٹڈی گروپس میں مل کر کام کرتے ہیں۔'
+  },
+  // Commonly Confused Words
+  {
+    id: 'affect-vs-effect',
+    word: 'Affect vs. Effect',
+    phonetic: '/əˈfekt/ vs /ɪˈfekt/',
+    partOfSpeech: 'verb vs noun',
+    meaning: 'Affect (verb) means to influence or produce a change. Effect (noun) is the result of a change.',
+    urduMeaning: 'اثر انداز ہونا (فعل) بمقابلہ نتیجہ / اثر (اسم)',
+    category: 'Confused Words',
+    synonyms: ['Influence vs Result'],
+    antonyms: ['Cause vs Inaction'],
+    example: 'The bad weather will affect our travel plans (verb). The effect was a two-hour flight delay (noun).',
+    urduExample: 'خراب موسم ہمارے سفر کے منصوبے پر اثر انداز ہوگا (Affect)۔ اس کا اثر پرواز میں دو گھنٹے کی تاخیر تھا (Effect)۔',
+    confusedWith: {
+      word: 'Effect',
+      meaning: 'Noun: The outcome or result of an event or cause.',
+      example: 'The medicine had an immediate calming effect.'
+    }
+  },
+  {
+    id: 'their-there-theyre',
+    word: 'Their vs. There vs. They\'re',
+    phonetic: '/ðeər/',
+    partOfSpeech: 'possessive / adverb / contraction',
+    meaning: 'Their = belonging to them. There = in or at that place. They\'re = contraction of "they are".',
+    urduMeaning: 'ان کا (ملکیت) / وہاں (جگہ) / وہ ہیں (مختصر)',
+    category: 'Confused Words',
+    synonyms: ['Belonging / Location / Contraction'],
+    antonyms: [],
+    example: 'They\'re putting their books over there.',
+    urduExample: 'وہ (They\'re) اپنی (their) کتابیں وہاں (there) رکھ رہے ہیں۔',
+    confusedWith: {
+      word: 'There',
+      meaning: 'Indicating a physical or conceptual place.',
+      example: 'Put the book right there on the shelf.'
+    }
+  },
+  {
+    id: 'accept-vs-except',
+    word: 'Accept vs. Except',
+    phonetic: '/əkˈsept/ vs /ɪkˈsept/',
+    partOfSpeech: 'verb vs preposition',
+    meaning: 'Accept (verb) means to receive or agree to something. Except (preposition) means excluding or other than.',
+    urduMeaning: 'قبول کرنا بمقابلہ سوائے / علاوہ',
+    category: 'Confused Words',
+    synonyms: ['Receive vs Excluding'],
+    antonyms: ['Reject vs Including'],
+    example: 'I accept your apology, and everyone came to the party except Hamza.',
+    urduExample: 'میں آپ کی معذرت قبول کرتا ہوں، اور حمزہ کے علاوہ سب تقریب میں آئے۔',
+    confusedWith: {
+      word: 'Except',
+      meaning: 'Not including; with the exclusion of.',
+      example: 'The shop is open every day except Sunday.'
+    }
+  },
+  {
+    id: 'lose-vs-loose',
+    word: 'Lose vs. Loose',
+    phonetic: '/luːz/ vs /luːs/',
+    partOfSpeech: 'verb vs adjective',
+    meaning: 'Lose (with one "o", /z/) means to misplace or be defeated. Loose (with two "o"s, /s/) means not tight.',
+    urduMeaning: 'کھونا / ہارنا بمقابلہ ڈھیلا',
+    category: 'Confused Words',
+    synonyms: ['Misplace vs Baggy/Slack'],
+    antonyms: ['Find / Tight'],
+    example: 'Do not lose your keys because the pocket is too loose.',
+    urduExample: 'اپنی چابیاں مت کھوئیں (lose) کیونکہ جیب بہت ڈھیلی ہے (loose)۔',
+    confusedWith: {
+      word: 'Loose',
+      meaning: 'Not firmly fitting, fixed, or tightly tied.',
+      example: 'The screw on the desk chair is loose.'
+    }
+  },
+  {
+    id: 'compliment-vs-complement',
+    word: 'Compliment vs. Complement',
+    phonetic: '/ˈkɒm.plɪ.mənt/',
+    partOfSpeech: 'noun / verb',
+    meaning: 'Compliment (with "i") means praise or kind words. Complement (with "e") means to complete or pair well with something.',
+    urduMeaning: 'تعریف کرنا بمقابلہ تکمیل کرنا / جوڑا بنانا',
+    category: 'Confused Words',
+    synonyms: ['Praise vs Complete'],
+    antonyms: ['Insult vs Clash'],
+    example: 'He gave her a warm compliment on how the blue scarf complemented her outfit.',
+    urduExample: 'انہوں نے ان کی تعریف کی (compliment) کہ نیلا اسکارف ان کے لباس کو کتنا مکمل کر رہا تھا (complement)۔',
+    confusedWith: {
+      word: 'Complement',
+      meaning: 'Something that completes or brings to perfection.',
+      example: 'Good grammar is the perfect complement to rich vocabulary.'
+    }
+  },
+  {
+    id: 'break-a-leg',
+    word: 'Break a leg',
+    phonetic: '/breɪk ə leɡ/',
+    partOfSpeech: 'idiom',
+    meaning: 'Good luck! Used traditionally by performers and students before an exam or stage show.',
+    urduMeaning: 'نیک تمنائیں، خوش قسمتی، کامیابی کی دعا',
+    category: 'Idioms & Phrases',
+    synonyms: ['Good luck', 'Best of luck', 'Do well'],
+    antonyms: ['Bad luck'],
+    example: 'I know you studied hard for your English IELTS exam—break a leg!',
+    urduExample: 'مجھے معلوم ہے آپ نے انگریزی امتحان کے لیے سخت محنت کی ہے—اللہ آپ کو کامیاب کرے!'
+  },
+  {
+    id: 'bite-the-bullet',
+    word: 'Bite the bullet',
+    phonetic: '/baɪt ðə ˈbʊl.ɪt/',
+    partOfSpeech: 'idiom',
+    meaning: 'To face an unavoidable, difficult, or unpleasant situation with courage and firmness.',
+    urduMeaning: 'ناخوشگوار صورتحال کا بہادری سے مقابلہ کرنا، کڑوا گھونٹ پینا',
+    category: 'Idioms & Phrases',
+    synonyms: ['Face the music', 'Take the plunge', 'Endure'],
+    antonyms: ['Dodge', 'Evade', 'Flee'],
+    example: 'I finally bit the bullet and delivered my first five-minute speech in English.',
+    urduExample: 'آخر کار میں نے ہمت کی اور انگریزی میں اپنی پہلی پانچ منٹ کی تقریر کی۔'
+  }
+];
